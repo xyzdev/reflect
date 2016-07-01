@@ -77,7 +77,7 @@ namespace xyz {
     }
 
     template<typename T>
-    static TypeId type_id() {
+    TypeId type_id() {
       static TypeId id = detail::TypeIdGenerator::next();
       return id;
     }
